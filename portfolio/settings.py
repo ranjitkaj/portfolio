@@ -78,8 +78,16 @@ WSGI_APPLICATION = 'potfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'herosecond',
+        'ENFORCE_SCHEMA': True,
+        'CLIENT':{
+            "host": "mongodb+srv://ranjitkajraitha:R@njit1234@cluster0.szk3lvs.mongodb.net/?retryWrites=true&w=majority",
+
+            "username" :'ranjitkajraitha',
+            "password" : 'R@njit1234',
+            "authMechanism" : 'SCRAM-SHA-1'
+        }
     }
 }
 
