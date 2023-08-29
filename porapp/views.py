@@ -8,6 +8,6 @@ def index(request):
         a.name=request.POST['name']
         a.mail=request.POST['mail']
         a.subject=request.POST['subject']
-        a.mesage = request.POST['mesage']
+       # a.mesage = request.POST['mesage']
     
     return render(request, 'index.html')
